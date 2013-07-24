@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'nixie';
+    src: url('../fonts/nixieone-regular-webfont.eot');
+    src: url('../fonts/nixieone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nixieone-regular-webfont.woff') format('woff'),
+         url('../fonts/nixieone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/nixieone-regular-webfont.svg#nixie_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	margin: 0;
+	padding: 0;	
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	background-color: black;
+}
+.clr {
+	clear: both;
+}
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;	
+}
+#background {
+	width: 1024px;
+	height: 748px;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+#background img {
+	height: 100%;;
+	
+}
+.wrapper {
+	/*background: url(../images/MainBackground5.jpg) no-repeat left top;*/
+	background-size: cover;
+	width: 1024px;
+	height: 748px;	
+	position: re;
+	padding: 0;
+	display: none;
+	overflow: hidden;
+}
+.wrapper.active {
+	display: block;
+}
+.mainMenu {
+	background: url(../images/homeButton.png) no-repeat 10px 21px;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 98px;
+	height: 18px;
+	color: white;
+	position: absolute;
+	left: 24px;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 32px;
+	padding-left: 15px;
+	cursor: pointer;
+}
+.leftCol {
+	float: left;
+}
+.schoolName {
+	line-height: 24px;
+	font-size: 22px;
+	background: url(../images/TagLogo.png) no-repeat 22px 0px;
+	background-size: 248px;
+	padding-top: 17px;
+	position: absolute;
+	top: 72px;
+	width: 246px;
+	padding-left: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+ul.menu {
+	width: 270px;
+	margin-top: 180px;
+	float: left;
+	margin-right: 30px;
+	position: relative;
+}
+.menu li {
+	background-color: rgba(0, 0, 0, 0.85);	
+	height: 42px;
+	font-size: 16px;
+	color: white;
+	line-height: 42px;
+	text-indent: 24px;
+	position: relative;
+}
+li.first {
+	background-color: rgba(152, 76, 159, 0.85);	
+}
+li.second {
+	background-color: rgba(134, 60, 140, 0.85);	
+}
+li.third {
+	background-color: rgba(121, 55, 128, 0.85);	
+}
+li.fourth {
+	background-color: rgba(109, 49, 115, 0.85);	
+}
+li.fifth {
+	background-color: rgba(97, 42, 102, 0.85);	
+}
+li.sixth {
+	background-color: rgba(85, 38, 89, 0.85);	
+}
+li.seventh {
+	background-color: rgba(73, 33, 77, 0.85);	
+}
+li.eighth {
+	background-color: rgba(61, 27, 64, 0.85);	
+}
+li.ninth {
+	background-color: rgba(48, 24, 51, 0.85);	
+}
+li.tenth {
+	background-color: rgba(36, 18, 38, 0.85);	
+}
+.rightCol {
+	float: left;	
+	margin-top: 50px;
+	padding: 20px 0 0px 30px;
+	width: 694px;
+	height: 678px;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: relative;
+}
+.secondMenu {
+	width: 100%;	
+}
+.secondMenu li {
+	float: left;	
+	padding: 0 10px;
+	line-height: 19px;
+	height: 19px;
+	border-left: solid 1px white;
+}
+.secondMenu li:first-child {
+	border-left: none;	
+	padding: 0 10px 0 0;
+}
+.secondMenu li a {
+	color: white;	
+	text-decoration: none;
+	font-size: 12px;
+}
+.rightCol h1 {
+	color: white;
+	width: 100%;
+	border-bottom: solid 2px #9035ae;
+	font-size: 18px;
+	margin: 0 0 0 0;
+	padding: 15px 0 5px 0;
+	float: left;
+}
+.rightCol h2 {
+	color: white;	
+	line-height: 24px;
+	font-size: 22px;
+}
+.scrollWrapper {
+	overflow: hidden;
+	height: 615px;
+	width: 100%;
+	display: none;
+}
+.scrollWrapper.active {
+	display: block;	
+}
+.scroll {	
+	float: left;
+}
+.scroll a {
+	color: white;
+	text-decoration: none;	
+}
+.scroll .left {
+	width: 305px;
+	float: left;
+}
+.scroll .right {
+	width: 305px;
+	margin-left: 50px;	
+	float: left;
+}
+.scroll table {	
+	color: white;
+	width: 100%;
+	line-height: 18px;
+	font-size: 13px;
+	border-collapse: collapse;
+	border-top: solid 1px #ffffff;
+	margin-bottom: 25px;
+}
+
+.scroll table.total {
+	width: 100%;	
+	border-top: none;
+	font-weight: bold;
+	font-size: 14px;
+}
+.scroll table.total tr td.curricSpacer{
+	text-align: right;	
+}
+.scroll table tr th {
+	padding: 3px;
+	border-bottom: solid 1px #ffffff;	
+	font-weight: bold;
+	text-align: left;
+}
+.scroll table tr th.curricSpacer {
+	text-align: right;
+}
+.scroll table tr td {
+	padding: 3px;
+	border-bottom: dotted 1px #ffffff;	
+}
+.scroll table td.fall-credits {
+	width: 35px;	
+}
+.scroll table td.spring-credits {
+	width: 35px;
+}
+.scroll table tr:last-child td {
+	border-bottom: none;	
+}
+.scroll table .elective-desc {
+	display: none;	
+}
+/**************Home view**********************/
+.wrapper#homeView {/*
+	background: url(../images/MainBackground4@2x.jpg) no-repeat 100% top;*/
+	background-size: cover;
+	overflow: hidden;
+}
+.logo {
+	background: url(../images/HeaderLogo@2x.png) left top;
+	width: 250px;
+	height: 63px;
+	background-size: cover;
+	position: fixed;
+	left: 70px;
+	top: 70px;	
+}
+.tileWrapper {
+	width: 3080px;
+	float: left;
+}
+.homeTile {
+	width: 260px;
+	height: 260px;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.85);
+	float: left;
+	margin: 250px 70px 0 70px;
+	position: relative;
+}
+.homeTileLarge {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+	opacity: 0.0;
+	transition: opacity 0.7s, transform 0.7s;
+	-webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+}
+.homeTileNormal {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+	opacity: 1;
+	transition: opacity 0.7s, transform 0.7s;
+	-webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+}
+.homeTile#About {
+	background-color: rgba(232, 46, 33, 0.85);
+}
+.homeTile#ADHT {
+	background-color: rgba(216, 60, 141, 0.85);
+}
+.homeTile#AMT {
+	background-color: rgba(152, 56, 184, 0.85);
+}
+.homeTile#SCE {
+	background-color: rgba(58, 68, 205, 0.85);
+}
+.homeTile#SDS {
+	background-color: rgba(49, 140, 224, 0.85);
+}
+.homeTile#Fashion {
+	background-color: rgba(85, 185, 62, 0.85);
+}
+.homeTile#PCS {
+	background-color: rgba(227, 190, 17, 0.85);
+}
+.homeTile h1{
+	font-size: 20px;
+	line-height: 25px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.homeTile ul {
+	position: absolute;
+	top: 110px;	
+}
+.homeTile ul li {
+	font-size: 13px;
+	line-height: 20px;	
+}
+ul li span {
+	font-size: 0.5em;	
+}
